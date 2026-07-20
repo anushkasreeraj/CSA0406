@@ -1,0 +1,80 @@
+NAME: Anushka Sree Raj
+REG NO: 192571024
+ASSESMENT: CO1 AT1
+SUBJECT: OPERATING SYSTEM( CSA0406)
+
+1.(A) Multi-user Operating system allows multiple users to use the same computer system processes to perform varioys tasks/operations.
+  (b) a kernal acts as a bridge between the harware and application software of the system and it aids
+      i)Schedules Cpu time among processes
+      ii)Manages memory and system resources 
+
+  (c)START
+Create child process using fork()
+IF child process THEN
+    Display Child PID
+ELSE
+    Display Parent PID and Child PID
+END IF
+STOP
+
+2.(A) system calls required for specific functions such as
+      create--create()
+      writing--write()
+      reading--read()
+      closing--close()
+
+  (b)two system management calls 
+      i)write ()-write data into a file 
+      ii) read()-reads data from a line 
+
+  (c)Pseudo code to create a file, write a student name, and close it
+START
+Create a file
+Write student name into the file
+Close the file
+STOP
+
+3.(A)when a user wants to copy contents of one file to another they should first open the parent file open(),
+     read the contents of the parent file read(),copy it into the child file write(), and th3en clode both the parent anfd child file close()
+
+3.(b) i)read()-reads data from the source file 
+    ii) write()-write data to the destination file 
+
+3.(C)Pseudo code to copy contents fron parent to child file
+START
+Open source file
+Open destination file
+Read data from source file
+Write data into destination file
+Close both files
+STOP
+
+4.(a)the purpose of fork() and exec() are:
+    i)fork()-create a new child process
+    ii)exec()-replaces the current process with a new program 
+
+  (b)the role of wait() system call.
+     is to make the parent process wait until the child process finishes its execution first.
+
+(c) Pseudo code using fork(), exec(), and wait()
+START
+Create child process using fork()
+IF child process THEN
+    Execute new program using exec()
+ELSE
+    Wait until child process completes
+END IF
+STOP
+
+
+
+5.(A) file management organises ,stores,retrieves ,and protect files effciently
+  (B) open()-opens a file for reading or writing .
+      close()-closes the files after use .
+
+  (c) Pseudo code to open a file, read its contents, and close it.
+START
+Open the file
+Read the file contents
+Close the file
+STOP
