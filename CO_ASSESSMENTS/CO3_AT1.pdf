@@ -31,7 +31,6 @@ Physical Address = 30
 2)PROGRAM:
 
 #include <stdio.h>
-
 int main() {
     int pageTable[20];
     int n, page, offset, frame, pageSize;
@@ -148,6 +147,7 @@ Memory Access Time without TLB = 20.00 ns
 Effective Memory Access Time with TLB = 5.00 ns
 
 5)PROGRAM:
+
 #include <stdio.h>
 int main() {
     int base, limit, logicalAddress;
